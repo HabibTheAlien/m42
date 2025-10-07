@@ -10,7 +10,7 @@ const REPO_NAME = 'm42';
 // IMPORTANT: This token must have repo permissions
 // WARNING: This token will be visible in client-side code
 // Consider creating a token with minimal permissions for security
-const GITHUB_TOKEN = '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';
+const GITHUB_TOKEN = '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';
 
 // Replace with your desired password for the upload section
 const UPLOAD_PASSWORD = '1418705422';
@@ -339,3 +339,4 @@ function fileToBase64(file) {
     });
 
 }
+
