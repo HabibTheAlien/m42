@@ -3,7 +3,7 @@
 // =============================================================================
 
 // Replace with your GitHub username and repository name
-const REPO_OWNER = 'HabibTheAlien';
+const REPO_OWNER = 'habibthealien';
 const REPO_NAME = 'm42';
 
 // Replace with your GitHub Personal Access Token (classic)
@@ -337,4 +337,5 @@ function fileToBase64(file) {
         reader.onload = () => resolve(reader.result);
         reader.onerror = error => reject(error);
     });
+
 }
