@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Data Repository</h1>
+      <div id="fileCount">Loading files...</div>
+    </header>
+
+    <main>
+      <!-- Upload Section (Password Protected) -->
+      <section id="uploadSection" class="hidden">
+        <h2>Upload Files</h2>
+        <div class="upload-area">
+          <input type="file" id="fileInput" multiple accept=".csv,.dta,.sav" />
+          <p>Select one or more files (.csv, .dta, .sav)</p>
+          <button id="uploadButton">Upload Files</button>
+          <div id="uploadStatus"></div>
+        </div>
+      </section>
+
+      <!-- Password Section -->
+      <section id="passwordSection">
+        <h2>Admin Access</h2>
+        <div class="password-area">
+          <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter password"
+          />
+          <button id="passwordButton">Unlock Upload</button>
+        </div>
+      </section>
+
+      <!-- File List Section -->
+      <section id="fileListSection">
+        <h2>Available Files</h2>
+        <div id="fileList">
+          <p>Loading files...</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
